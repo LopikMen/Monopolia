@@ -1,9 +1,7 @@
 # Monopolia
 
 ![image](https://github.com/LopikMen/Monopolia/assets/105353472/25044bf5-59e7-4207-a684-4ade74d0e80b)
-											PLAYERS	
-												
-												
+										
 												
 						
 												
