@@ -15,8 +15,10 @@
 При попадание на ивент будет происходить автоматически
 
 ![image](https://github.com/LopikMen/Monopolia/assets/105353472/25044bf5-59e7-4207-a684-4ade74d0e80b)
-										
-![image](https://github.com/LopikMen/Monopolia/assets/105353472/f2443ab8-7ac9-472b-9055-c6dfbce6659a)
+
+	  
+![image](https://github.com/LopikMen/Monopolia/assets/105353472/ec994cac-9be5-4128-af35-88d5d5e7e14a)
+
 												
 						
 												
