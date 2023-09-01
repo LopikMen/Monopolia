@@ -6,6 +6,7 @@
 И ходят по клеткам с помощью(awds)
 
 При нажатие tab будет информация о игроках
+
 ![image](https://github.com/LopikMen/Monopolia/assets/105353472/a20e6b97-8b1c-414f-b49d-551756dc6a8d)
 
 
@@ -15,6 +16,7 @@
 
 ![image](https://github.com/LopikMen/Monopolia/assets/105353472/25044bf5-59e7-4207-a684-4ade74d0e80b)
 										
+![image](https://github.com/LopikMen/Monopolia/assets/105353472/f2443ab8-7ac9-472b-9055-c6dfbce6659a)
 												
 						
 												
