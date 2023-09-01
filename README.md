@@ -20,6 +20,3 @@
 ![image](https://github.com/LopikMen/Monopolia/assets/105353472/ec994cac-9be5-4128-af35-88d5d5e7e14a)
 
 												
-						
-												
-![image](https://github.com/LopikMen/Monopolia/assets/105353472/575a37cf-09f5-4263-9673-138aac7874b0)
