@@ -1,0 +1,22 @@
+﻿  Map.cpp
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\App.h(9,6): error C3646: map: неизвестный спецификатор переопределения
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\App.h(9,9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  Monopolia.cpp
+  Player.cpp
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Map.h(13,17): error C2065: Player: необъявленный идентификатор
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Map.h(13,10): error C2923: std::vector: "Player" не является допустимым аргументом типа шаблон для параметра "_Ty"
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Map.h(13,17): message : см. объявление "Player"
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Map.h(13,10): error C2976: std::vector: слишком мало аргументов шаблон
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : см. объявление "std::vector"
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(14,13): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(20,10): error C2065: window: необъявленный идентификатор
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(23,5): error C2065: window: необъявленный идентификатор
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(29,26): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(32,25): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(36,26): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(40,24): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(46,26): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(49,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(53,26): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Lopik\OneDrive\Рабочий стол\Monopolia\Monopolia\Player.cpp(56,27): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
