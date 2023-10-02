@@ -13,6 +13,7 @@ App::App():
 	pls.push_back(pl4);
 	rool.creatB("kubic.jpg");
 
+	Cerd start;
 }
 
 void App::run()
