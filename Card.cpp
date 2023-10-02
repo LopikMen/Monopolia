@@ -6,10 +6,10 @@ inline Card::Card() {
 
 void Card::createCard(){
 	cardOne.setSize(Vector2f(SIZE_CARD_X, SIZE_CARD_Y));
-	cardOnePositionLeftStartDown[0] = SIZE_CARD_X;
-	cardOnePositionLeftStartDown[1] = SIZE_CARD_Y;
-	cardOnePositionRightStarUp[0] = SIZE_CARD_X + 160;
-	cardOnePositionRightStarUp[1] = SIZE_CARD_Y + 60;
+	cardOnePositionLeftStartDown.x = SIZE_CARD_X;
+	cardOnePositionLeftStartDown.y = SIZE_CARD_Y;
+	cardOnePositionRightStarUp.x = SIZE_CARD_X + 160;
+	cardOnePositionRightStarUp.y = SIZE_CARD_Y + 60;
 }
 
 void Card::povernutCard()
@@ -20,19 +20,19 @@ void Card::povernutCard()
 
 void Card::setCountHomeAndCostHome(int count, int cost)
 {
-	CountHomeAndCostHome.push_back(count);
-	CountHomeAndCostHome.push_back(cost);
+	CountHomeAndCostHome.x=count;
+	CountHomeAndCostHome.y=cost;
 
 }
 
 int Card::getCountHome()
 {
-	return CountHomeAndCostHome[0];
+	return CountHomeAndCostHome.x;
 }
 
 int Card::getCostHome()
 {
-	return CountHomeAndCostHome[1];
+	return CountHomeAndCostHome.y;
 }
 
 int Card::getId()
