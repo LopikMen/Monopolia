@@ -6,10 +6,9 @@ inline Card::Card() {
 
 void Card::createCard(){
 	cardOne.setSize(Vector2f(SIZE_CARD_X, SIZE_CARD_Y));
-	cardOnePositionLeftStartDown.x = SIZE_CARD_X;
-	cardOnePositionLeftStartDown.y = SIZE_CARD_Y;
-	cardOnePositionRightStarUp.x = SIZE_CARD_X + 160;
-	cardOnePositionRightStarUp.y = SIZE_CARD_Y + 60;
+	cardOnePositionLeftStartDown = cardOne.getPosition();
+	cardOnePositionRightStarUp.x =cardOnePositionLeftStartDown.x  + 160;
+	cardOnePositionRightStarUp.y = cardOnePositionLeftStartDown.y + 60;
 }
 
 void Card::povernutCard()
