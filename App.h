@@ -1,8 +1,6 @@
 #pragma once
 #include"Map.h"
-#include"Card.h"
-#include"Player.h"
-#include"Button.h"
+
 class App
 {
 public:

@@ -14,6 +14,11 @@ int Player::getXod()
 	return xod;
 }
 
+void Player::setXod(int xod)
+{
+	this->xod = xod;
+}
+
 
 
 Player::Player(string hero_image,string nameP)
@@ -48,7 +53,8 @@ void Player::checkPosition()
 
 void Player::walkHero(Card card)
 {
-	while (card.cardOnePositionLeftStartDown.y < position.y < card.cardOnePositionRightStarUp.y) {
+	Vector2f pp = card.getPosition();
+	while (pp.y < position.y < pp.y) {
 		time = clock.getElapsedTime().asMicroseconds();
 		clock.restart();
 		time = time / 1200;
@@ -86,7 +92,8 @@ void Player::walkHero(Card card)
 			checkPosition();
 		}
 	}
-	if (card.cardOnePositionLeftStartDown.y < position.y > card.cardOnePositionRightStarUp.y) {
+	
+	if (pp.y < position.y > pp.y) {
 		xod--;
 		xodId++;
 
@@ -96,25 +103,31 @@ void Player::walkHero(Card card)
 
 void Player::checkCards(vector<Card>& cards)
 {
-	for (auto cr : cards) {
-		if (xodId == cr.getId()&& xod!=0) {
+	for (int i = 0; i < cards.size();i++) {
+		if (xod!=0) {
 			for (int i = 0; i < xod;) {
-				walkHero(cr);
+				walkHero(cards[i]);
 
 			}
 		}
-		else if (xod == 0 && cr.nameP.getString() == "") {
-			buyCard(cr);
+		else if (xod == 0 && cards[i].nameP.getString() == "") {
+			buyCard(cards[i]);
 		}
-		else if(xod == 0 && cr.nameP.getString() == name.getString()){
-			if (Keyboard::isKeyPressed(Keyboard::Y)) {
-				mani -= cr.getCostHome();
-				cr.setCountHomeAndCostHome(2, cr.getCostHome());
-				cr.setEventOnCard(cr.getCostHome() * cr.getCountHome());
+		else if(xod == 0 && cards[i].nameP.getString() == name.getString()){
+			if (Keyboard::isKeyPressed(Keyboard::Tab)) {
+				string str;
+				cin >> str;
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
+					if (str == "yes")
+
+						mani -= cards[i].getCostHome();
+					cards[i].setCountHomeAndCostHome(2, cards[i].getCostHome());
+					cards[i].setEventOnCard(cards[i].getCostHome() * cards[i].getCountHome());
+				}
 			}
 		}
-		else if (xod == 0 && cr.nameP.getString() != "") {
-			mani -= cr.getEventOnCard();
+		else if (xod == 0 && cards[i].nameP.getString() != "") {
+			mani -= cards[i].getEventOnCard();
 		}
 	}
 }

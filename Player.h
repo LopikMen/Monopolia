@@ -1,5 +1,4 @@
 #pragma once
-#include"Config.h"
 #include"Card.h"
 class Player
 {
@@ -21,9 +20,10 @@ public:
 	Player();
 	Text getText();
 	int getXod();
+	void setXod(int xod);
 	Player(string hero_image,string name);
 	void buyCard(Card& card);
 	void checkPosition();
 	void walkHero(Card card);
-	void checkCards(vector<Card>& crds,Player& xodPlayer);
+	void checkCards(vector<Card>& crds);
 };

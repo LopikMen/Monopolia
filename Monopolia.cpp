@@ -1,11 +1,6 @@
 ﻿
 #include"App.h"
 
-#include"Button.h"
-#include"Card.h"
-#include"Map.h"
-#include"Player.h"
-#include"Config.h"
 int main()
 {
     /*sf::RenderWindow window(sf::VideoMode(SIZE_WINDOWS_X, SIZE_WINDOWS_Y), "monopolia");
@@ -98,7 +93,8 @@ int main()
  
         window.display();
     }*/
-
+    App app;
+    app.run();
    
 
 }
